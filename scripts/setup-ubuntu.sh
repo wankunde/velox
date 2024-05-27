@@ -130,7 +130,7 @@ function install_fbthrift {
 }
 
 function install_conda {
-  MINICONDA_PATH=/opt/miniconda-for-velox
+  MINICONDA_PATH=/workspace/miniconda
   if [ -e ${MINICONDA_PATH} ]; then
     echo "File or directory already exists: ${MINICONDA_PATH}"
     return
