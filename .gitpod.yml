@@ -9,7 +9,7 @@ image: gitpod/workspace-full
 tasks:
   - name: prebuild
     init: |
-      curl -sS https://raw.githubusercontent.com/wankunde/velox/main/scripts/setup-ubuntu.sh | bash
+      bash /workspaces/velox/scripts/setup-ubuntu.sh
       make
     command: make
 
