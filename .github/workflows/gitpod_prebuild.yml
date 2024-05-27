@@ -26,12 +26,6 @@ jobs:
       id: image_name
       run: echo "IMAGE_NAME=ghcr.io/wankunde/velox_prebuild:20240527" >> $GITHUB_ENV
  
-    - name: Build Docker Image
-      uses: docker/build-action@v2
-      with:
-        push: true
-        tags: ${{ env.IMAGE_NAME }}
- 
     - name: Push Docker Image to GHCR
       uses: docker/build-push-action@v2
       with:
