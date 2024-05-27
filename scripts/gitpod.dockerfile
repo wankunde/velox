@@ -19,7 +19,7 @@ FROM ${base}
 
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
-ADD scripts /velox/scripts/
+ADD . /workspace/velox/
 
 # TZ and DEBIAN_FRONTEND="noninteractive"
 # are required to avoid tzdata installation
