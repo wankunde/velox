@@ -1,5 +1,13 @@
 name: Build and Push Gitpod Image to GHCR
 
+on:
+  workflow_dispatch:
+    inputs:
+      class:
+        description: 'Benchmark class'
+        required: true
+        default: '*'
+
 jobs:
   build-and-push-image:
     runs-on: ubuntu-latest
