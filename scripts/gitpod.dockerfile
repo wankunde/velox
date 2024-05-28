@@ -27,6 +27,6 @@ ADD . /workspace/velox/
 ARG DEBIAN_FRONTEND="noninteractive"
 # ENV TZ=${tz}
 RUN /workspace/velox/scripts/setup-ubuntu.sh
-RUN cd /workspace/velox && make
+# RUN cd /workspace/velox && make
 
 WORKDIR /workspace/velox
