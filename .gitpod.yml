@@ -4,12 +4,13 @@
 
 # Learn more from ready-to-use templates: https://www.gitpod.io/docs/introduction/getting-started/quickstart
 
-image: gitpod/workspace-full
+# image: gitpod/workspace-full
+image: ghcr.io/wankunde/velox_prebuild:20240527
 
 tasks:
   - name: prebuild
-    init: |
-      bash /workspace/velox/scripts/setup-ubuntu.sh
-      make
-    command: make
+    # init: |
+    #   bash /workspace/velox/scripts/setup-ubuntu.sh
+    #   make
+    # command: make
 
