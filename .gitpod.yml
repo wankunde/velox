@@ -9,7 +9,8 @@ image: ghcr.io/wankunde/velox_prebuild:20240527
 
 tasks:
   - name: prebuild
-    # init: |
+    init: |
+        make
     #   bash /workspace/velox/scripts/setup-ubuntu.sh
     #   make
     # command: make
